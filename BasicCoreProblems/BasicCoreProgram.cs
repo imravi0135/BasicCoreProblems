@@ -8,34 +8,18 @@ namespace BasicCoreProblems
 {
     internal class BasicCoreProgram
     {
-        public int head = 0;
-        public int tail = 0;
-        public int percentagehead = 0;
-        public int percentagetail = 0;
-        public void Checkpercentage()
+        public void Check_leap_year()
         {
-            Console.WriteLine("Enter number of times you want to flip coin");
-            int flip_number = Convert.ToInt32(Console.ReadLine());
-            Random random = new Random();
-
-            for (int i = 0; i < flip_number; i++)
+            Console.WriteLine("Enter the year in 4 digit");
+            int year = Convert.ToInt32(Console.ReadLine());
+            if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
             {
-                double checkflip = random.Next(0, 2);
-                if (checkflip < 0.5)
-                {
-                    Console.WriteLine("Tail");
-                    tail++;
-                }
-                else
-                {
-                    Console.WriteLine("Head");
-                    head++;
-                }
+                Console.WriteLine(year + "is a Leap Year");
             }
-            percentagehead = head * (100 / flip_number);
-            percentagetail = tail * (100 / flip_number);
-            Console.WriteLine("Percentage of head :" + percentagehead + " Percentage of tail:" + percentagehead);
-            Console.ReadKey();
+            else
+            {
+                Console.WriteLine(year + "is not a Leap Year");
+            }
         }
     }
 }
