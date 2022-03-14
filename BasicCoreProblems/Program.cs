@@ -13,10 +13,10 @@ namespace BasicCoreProblems
            
            
             BasicCoreProgram prob = new BasicCoreProgram();
-
-           
-            prob.SwapingOfNumbers();
+            prob.Evenodd();
             Console.ReadLine();
+
+          
         }
     }
 }
