@@ -8,21 +8,21 @@ namespace BasicCoreProblems
 {
     internal class BasicCoreProgram
     {
-        public void Evenodd()
+        public void vowel_consonant()
         {
-            int number;
-            Console.WriteLine("Enter number");
-            number = Convert.ToInt32(Console.ReadLine());
-            if (number % 2 == 0)
+            char ch;
+            Console.WriteLine("Enter charactor");
+            ch = Convert.ToChar(Console.ReadLine());
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
             {
-                Console.Write("Entered Number is an Even Number");
-                Console.Read();
+                Console.WriteLine(ch + " is Vowel.");
             }
-            else
+            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
             {
-                Console.Write("Entered Number is an Odd Number");
-                Console.Read();
+                Console.WriteLine(ch + " is Consonant.");
             }
+
         }
     }
 }

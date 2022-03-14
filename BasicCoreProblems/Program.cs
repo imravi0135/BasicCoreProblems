@@ -13,7 +13,7 @@ namespace BasicCoreProblems
            
            
             BasicCoreProgram prob = new BasicCoreProgram();
-            prob.Evenodd();
+            prob.vowel_consonant();
             Console.ReadLine();
 
           
