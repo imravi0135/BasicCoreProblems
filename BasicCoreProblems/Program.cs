@@ -13,7 +13,7 @@ namespace BasicCoreProblems
            
            
             BasicCoreProgram prob = new BasicCoreProgram();
-            prob.vowel_consonant();
+            prob.largest_num();
             Console.ReadLine();
 
           

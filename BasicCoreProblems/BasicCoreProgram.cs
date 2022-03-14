@@ -8,22 +8,33 @@ namespace BasicCoreProblems
 {
     internal class BasicCoreProgram
     {
-        public void vowel_consonant()
+        public void largest_num()
         {
-            char ch;
-            Console.WriteLine("Enter charactor");
-            ch = Convert.ToChar(Console.ReadLine());
+            int num1, num2, num3;
+            Console.WriteLine("Enter first number");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter third number");
+            num3 = Convert.ToInt32(Console.ReadLine());
 
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            if (num1 > num2)
             {
-                Console.WriteLine(ch + " is Vowel.");
+                if (num1 > num3)
+                {
+                    Console.Write("Number one is the largest!\n");
+                }
+                else
+                {
+                    Console.Write("Number three is the largest!\n");
+                }
             }
-            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-            {
-                Console.WriteLine(ch + " is Consonant.");
-            }
-
+            else if (num2 > num3)
+                Console.Write("Number two is the largest!\n");
+            else
+                Console.Write("Number three is the largest!\n");
         }
     }
+
 }
 
