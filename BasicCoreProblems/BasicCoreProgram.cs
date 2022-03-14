@@ -8,17 +8,16 @@ namespace BasicCoreProblems
 {
     internal class BasicCoreProgram
     {
-        public void Check_leap_year()
+        public void PowerTwo()
         {
-            Console.WriteLine("Enter the year in 4 digit");
-            int year = Convert.ToInt32(Console.ReadLine());
-            if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+            Console.WriteLine("Enter the value of power");
+            int power = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Table of power of two");
+            int num = 2, ans = 1;
+            for (int i = 1; i <= power; i++)
             {
-                Console.WriteLine(year + "is a Leap Year");
-            }
-            else
-            {
-                Console.WriteLine(year + "is not a Leap Year");
+                ans = ans * num;
+                Console.WriteLine(ans);
             }
         }
     }

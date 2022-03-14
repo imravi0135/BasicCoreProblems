@@ -11,7 +11,7 @@ namespace BasicCoreProblems
         static void Main(string[] args)
         {
             BasicCoreProgram prob = new BasicCoreProgram();
-            prob.Check_leap_year();
+            prob.PowerTwo();
             Console.ReadLine();
         }
     }
