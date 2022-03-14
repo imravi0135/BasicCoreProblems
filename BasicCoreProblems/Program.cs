@@ -11,7 +11,7 @@ namespace BasicCoreProblems
         static void Main(string[] args)
         {
             BasicCoreProgram prob = new BasicCoreProgram();
-            prob.Harmonic_number();
+            prob.Factorization(36);
             Console.ReadLine();
         }
     }
