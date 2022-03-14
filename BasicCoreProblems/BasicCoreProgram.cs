@@ -8,18 +8,18 @@ namespace BasicCoreProblems
 {
     internal class BasicCoreProgram
     {
-        public void PowerTwo()
+        public void Harmonic_number()
         {
-            Console.WriteLine("Enter the value of power");
-            int power = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Table of power of two");
-            int num = 2, ans = 1;
-            for (int i = 1; i <= power; i++)
+            Console.WriteLine("Enter the value of n");
+            int N = Convert.ToInt32(Console.ReadLine());
+            double harmonic = 1.00;
+            for (int i = 2; i <= N; i++)
             {
-                ans = ans * num;
-                Console.WriteLine(ans);
+                harmonic += (double)1 / i;
             }
+            Console.WriteLine("Sum of Harmonic number is :" + harmonic);
         }
     }
+    
 }
 
